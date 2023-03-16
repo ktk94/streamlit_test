@@ -6,7 +6,7 @@ import pandas as pd
 from streamlit_extras.add_vertical_space import add_vertical_space
 position=st.radio('직군 선택',['POPM','서비스기획자'])
 #POPM
-df=df=pd.read_excel(r'C:\Users\A\Desktop\POPM 기업분류.xlsx',sheet_name=position)
+df=df=pd.read_excel(r'POPM 기업분류.xlsx',sheet_name=position)
 df['대,중견 기업 공고 %']=df['대,중견 기업 공고 %']*100
 df['스타트업 공고 %']=df['스타트업 공고 %']*100
 df2=df[df['그룹']!='기획 산출물']
